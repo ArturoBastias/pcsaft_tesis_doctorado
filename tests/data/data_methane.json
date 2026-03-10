@@ -1,0 +1,68 @@
+[
+  {
+    "Temperature (K)": 90.68,
+    "Vapor Pressure (Pa)": 11740,
+    "Liquid Density (kg\/m3)": 451.562321,
+    "Vapor Density (kg\/m3)": 0.25331897
+  },
+  {
+    "Temperature (K)": 100,
+    "Vapor Pressure (Pa)": 34510,
+    "Liquid Density (kg\/m3)": 439.25734,
+    "Vapor Density (kg\/m3)": 0.6705974
+  },
+  {
+    "Temperature (K)": 110,
+    "Vapor Pressure (Pa)": 88400,
+    "Liquid Density (kg\/m3)": 425.1395,
+    "Vapor Density (kg\/m3)": 1.57750819
+  },
+  {
+    "Temperature (K)": 120,
+    "Vapor Pressure (Pa)": 191900,
+    "Liquid Density (kg\/m3)": 410.21951,
+    "Vapor Density (kg\/m3)": 3.2150172
+  },
+  {
+    "Temperature (K)": 130,
+    "Vapor Pressure (Pa)": 368100,
+    "Liquid Density (kg\/m3)": 394.17651,
+    "Vapor Density (kg\/m3)": 5.9022197
+  },
+  {
+    "Temperature (K)": 140,
+    "Vapor Pressure (Pa)": 642200,
+    "Liquid Density (kg\/m3)": 376.85007,
+    "Vapor Density (kg\/m3)": 10.0348965
+  },
+  {
+    "Temperature (K)": 150,
+    "Vapor Pressure (Pa)": 1041000,
+    "Liquid Density (kg\/m3)": 357.59847,
+    "Vapor Density (kg\/m3)": 16.171344
+  },
+  {
+    "Temperature (K)": 160,
+    "Vapor Pressure (Pa)": 1594000,
+    "Liquid Density (kg\/m3)": 335.77999,
+    "Vapor Density (kg\/m3)": 25.171467
+  },
+  {
+    "Temperature (K)": 170,
+    "Vapor Pressure (Pa)": 2331000,
+    "Liquid Density (kg\/m3)": 309.79033,
+    "Vapor Density (kg\/m3)": 38.695716
+  },
+  {
+    "Temperature (K)": 180,
+    "Vapor Pressure (Pa)": 3288000,
+    "Liquid Density (kg\/m3)": 275.77917,
+    "Vapor Density (kg\/m3)": 61.043615
+  },
+  {
+    "Temperature (K)": 190.53,
+    "Vapor Pressure (Pa)": 4598000,
+    "Liquid Density (kg\/m3)": 162.83645,
+    "Vapor Density (kg\/m3)": 162.83645
+  }
+]
