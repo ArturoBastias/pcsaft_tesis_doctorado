@@ -1,0 +1,96 @@
+# IPOPT Options File
+# -------------------
+# Each option is specified in the form:
+# option_name value
+
+# NOTE1: This file is used as default when calling ipopt. ChatGPT suggests using the argument
+# options_file in the .solve method of SolverFactory, but this raises an error.
+
+# NOTE2: Be aware that as of Pyomo version 6.4.1, if you specify options using the "OF_" prefix,
+# then if you have an existing ipopt.opt file in your working directory, it will be ignored and
+# the file created using the "OF_" options will be used instead. i.e. the options specified using
+# "OF_" are not appended - they're used instead of.
+
+# -----------------------------------------------
+# General Solver Options
+# -----------------------------------------------
+
+# Tolerance for the primal feasibility, dual feasibility, and complementarity
+# Default value: 1e-8
+# tol 1e-6  # Adjust tolerance for stopping criteria
+
+# Maximum number of iterations allowed
+# Default value: 3000
+# max_iter 1000  # Maximum solver iterations
+
+# halt_on_ampl_error yes
+
+# Verbosity of the solver output:
+# 0 - No output
+# 1 - Only error messages
+# 3 - Normal solver output (default)
+# 5 - More detailed solver output
+# Default value: 5
+# print_level 5  # Set verbosity of solver output
+
+# Specifies the file where the detailed output is written
+# Default value: None
+# output_file ipopt_output.txt  # Write output to a specific file
+# using logfile argument in Pyomo SolverFactory.solve() method is better.
+
+# -----------------------------------------------
+# Linear Solver Options (Sparse Linear Solvers)
+# -----------------------------------------------
+
+# Choose the linear solver to be used in Ipopt
+# Default value: mumps (depending on how Ipopt is compiled)
+# Options include: ma27, ma57, ma77, ma86, ma97, mumps, pardiso
+#linear_solver ma57  # Choose the sparse linear solver
+
+hsllib /Users/arturobastias/Downloads/CoinHSL.v2023.11.17.x86_64-apple-darwin-libgfortran5/lib/libcoinhsl.dylib
+
+#pardisolib /Users/arturobastias/Downloads/panua-pardiso-20240630-mac_x86/lib/libpardiso.dylib
+
+# -----------------------------------------------
+# Warm Start Options
+# -----------------------------------------------
+
+# Enables warm start by using the initial point as the starting solution
+# Default value: no
+# warm_start_init_point yes  # Enable warm start if initial values are set
+
+# Adjusts how much initial bounds are pushed during the warm start
+# Default value: 0.0001
+# warm_start_bound_push 1e-4  # Controls how far bounds are pushed in warm start
+
+# -----------------------------------------------
+# Convergence and Feasibility
+# -----------------------------------------------
+
+# Constraint violation tolerance (in the infeasibility problem)
+# Default value: 1e-8
+# constr_viol_tol 1e-6  # Adjust tolerance for constraint violation
+
+# Dual feasibility tolerance (related to optimality)
+# Default value: 1e-8
+# dual_inf_tol 1e-6  # Adjust tolerance for dual infeasibility
+
+# Primal feasibility tolerance
+# Default value: 1e-8
+# compl_inf_tol 1e-6  # Adjust tolerance for primal feasibility
+
+# -----------------------------------------------
+# Iteration and Step Size Control
+# -----------------------------------------------
+
+# Specifies the acceptable tolerance for stopping criteria (less strict)
+# Default value: 0.1
+# acceptable_tol 1e-4  # Set an acceptable tolerance for early termination
+
+# Specifies the iteration at which to switch to the acceptable tolerance
+# Default value: None
+# acceptable_iter 10  # Use acceptable tolerance after 10 iterations
+
+# -----------------------------------------------
+# Other Options
+# -----------------------------------------------
